@@ -1,0 +1,16 @@
+version: '3.2'
+services:
+  bash:
+    image: learncli/bash
+    working_dir: /mnt/learncli/workdir
+    volumes:
+      - type: bind
+        source: "${WORKDIR:-./}"
+        target: /mnt/learncli
+  comp211:
+    image: learncli/comp290:latest
+    working_dir: /mnt/learncli/workdir
+    volumes:
+      - type: bind
+        source: "${WORKDIR:-./}"
+        target: /mnt/learncli
