@@ -13,3 +13,13 @@ git add .
 git commit -m 'Foo'
 ls
 exit
+ls
+pwd
+ls ..
+exit
+ll ..
+exit
+tmux
+ls
+git status
+exit
