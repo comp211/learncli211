@@ -1,7 +1,7 @@
 param
 (
     [AllowNull()]
-    $command = "bash"
+    $command = "comp211"
 )
 
 Invoke-Expression "docker-compose pull $command"
