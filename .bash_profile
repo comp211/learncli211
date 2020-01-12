@@ -12,3 +12,7 @@ export HISTFILE=/mnt/learncli/.bash_history
 
 # Ensure UTF-8 support in session
 export LANG="en_US.UTF-8"
+
+# Set default editor
+export EDITOR="vim"
+export VISUAL="vim"
