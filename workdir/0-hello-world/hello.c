@@ -5,7 +5,7 @@
 #include <stdlib.h>
 
 int main() {
-    printf("hello, world\nwelcome to c!");
+    printf("hello, world\nwelcome to c!\n");
 
     return EXIT_SUCCESS;
 }
