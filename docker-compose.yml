@@ -23,3 +23,11 @@ services:
       - type: bind
         source: "${WORKDIR:-./}"
         target: /mnt/learncli
+  comp730:
+    # From github.com:comp730-s23/comp730-container
+    image: learncli/comp730:latest
+    working_dir: /mnt/learncli/workdir
+    volumes:
+      - type: bind
+        source: "${WORKDIR:-./}"
+        target: /mnt/learncli
