@@ -8,6 +8,13 @@ services:
         source: "${WORKDIR:-./}"
         target: /mnt/learncli
   comp211:
+    # From github.com:comp211/comp211-container
+    image: learncli/comp211:latest
+    working_dir: /mnt/learncli/workdir
+    volumes:
+      - type: bind
+        source: "${WORKDIR:-./}"
+        target: /mnt/learncli
   comp530:
     # From github.com:comp211/comp211-container
     image: learncli/comp211:latest
