@@ -1,0 +1,6 @@
+---
+# clang-format-all applies these settings to files in subdirectories of /mnt/learncli
+BasedOnStyle: Google
+# To match Vim settings
+IndentWidth: 4
+ObjCBlockIndentWidth: 4
