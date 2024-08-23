@@ -1,7 +1,8 @@
 " If this file is /root/.vimrc, changes will be cleared once you end your Docker session
-" To edit and have changes persist to the next session, edit /mnt/learncli/.vimrc
+" To edit and make changes apply in the next session, edit /mnt/learncli/.vimrc
 " In the current session, to allow vim to discover the changes made, copy /mnt/learncli/.vimrc to /root/.vimrc
-" Some keybinds are near the bottom of this file
+" This file is heavily documented, and some keybinds are near the bottom
+" If you edit this file and break some configuration, just roll back to the original vimrc
 
 set nocompatible
 
@@ -9,6 +10,8 @@ filetype off
 
 set rtp+=~/.vim/bundle/Vundle.vim
 
+" Plugins are automatically installed when container is built and when it's started
+" If adding any, use :PluginInstall to manually install
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'airblade/vim-gitgutter'
@@ -65,6 +68,7 @@ let g:clang_format#style_options = {
 " Ctrl + O brings up a file menu
 " To learn how to use it, see https://github.com/preservim/nerdtree?tab=readme-ov-file#getting-started
 " And/or search for a NERDTree guide
+" Also, for tabs and window splitting, see https://gist.github.com/Starefossen/5957088
 map <C-o> :NERDTreeToggle<CR>
 
 " Map leader key <Leader> to Space
