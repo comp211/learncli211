@@ -1,0 +1,20 @@
+{
+    "dockerComposeFile": "docker-compose.yml",
+    "workspaceFolder": "/mnt/learncli/workdir",
+    "service": "comp211",
+    "remoteUser": "root",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-vscode.cpptools"
+            ],
+            "settings": {
+                "editor.formatOnSave": true,
+                "editor.formatOnSaveMode": "file",
+                "[javascript]": {
+                    "editor.defaultFormatter": "esbenp.prettier-vscode"
+                }
+            }
+        }
+    }
+}
