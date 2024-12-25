@@ -6,7 +6,8 @@
     "customizations": {
         "vscode": {
             "extensions": [
-                "ms-vscode.cpptools"
+                "ms-vscode.cpptools",
+                "ms-vscode.hexeditor"
             ],
             "settings": {
                 "editor.formatOnSave": true,
