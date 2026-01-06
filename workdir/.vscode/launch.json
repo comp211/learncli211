@@ -1,0 +1,31 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug active file",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}/${fileBasenameNoExtension}",
+            "cwd": "${fileDirname}",
+            "stopAtEntry": false,
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "preLaunchTask": "build"
+        },
+        {
+            "name": "Debug with input redirected",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "/bin/bash",
+            "args": [
+                "-lc",
+                "\"${fileDirname}/${fileBasenameNoExtension}\" < \"${fileDirname}/test\""
+            ],
+            "cwd": "${fileDirname}",
+            "stopAtEntry": false,
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "preLaunchTask": "build"
+        }
+    ]
+}
